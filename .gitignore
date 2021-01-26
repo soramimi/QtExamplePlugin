@@ -2,3 +2,5 @@
 MyProjectPlugin/_build1/
 MyProjectPlugin/_build2/
 MyProjectPlugin/_bin/
+QtPluginGenerator/.qmake.stash
+QtPluginGenerator/_build/

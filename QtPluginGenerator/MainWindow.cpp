@@ -39,7 +39,7 @@ void MainWindow::on_pushButton_close_clicked()
 
 void MainWindow::generate()
 {
-	QString template_dir = "/home/soramimi/develop/QtExamplePlugin/MyProjectPlugin";
+	QString template_dir = "/var/lib/soramimi.jp/MyProjectPlugin";
 	QString project_name = ui->lineEdit_project_name->text();
 	QString dstdir = ui->lineEdit_destination_dir->text();
 	if (!QFileInfo(dstdir).isDir()) return;
@@ -90,7 +90,7 @@ void MainWindow::generate()
 					QByteArray result;
 					int pos = 0;
 					while (pos < source.size()) {
-						if (pos + oldname.size() <= source.size()) {
+						if (int(pos + oldname.size()) <= source.size()) {
 							auto memicmp = [](char const *a, char const *b, int n){
 								for (int i = 0; i < n; i++) {
 									int c = toupper((unsigned char)*a);
