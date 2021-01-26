@@ -1,0 +1,4 @@
+*.user
+MyProjectPlugin/_build1/
+MyProjectPlugin/_build2/
+MyProjectPlugin/_bin/
